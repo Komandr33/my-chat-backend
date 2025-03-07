@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", // Версия JavaScript, в которую компилируется TypeScript
+    "module": "CommonJS", // Используемый модуль (CommonJS для Node.js)
+    "outDir": "./dist", // Папка для скомпилированных файлов
+    "rootDir": "./src", // Папка с исходным кодом
+    "strict": true, // Включает строгую проверку типов
+    "esModuleInterop": true, // Упрощает работу с модулями CommonJS и ES Modules
+    "skipLibCheck": true, // Пропускает проверку типов в файлах .d.ts
+    "forceConsistentCasingInFileNames": true, // Проверяет регистр имен файлов
+    "moduleResolution": "node", // Стратегия разрешения модулей (для Node.js)
+    "resolveJsonModule": true, // Позволяет импортировать JSON-файлы
+    "isolatedModules": true, // Гарантирует, что каждый файл является независимым модулем
+    "noImplicitAny": true, // Запрещает неявное использование типа `any`
+    "sourceMap": true, // Генерирует source maps для отладки
+    "removeComments": true, // Удаляет комментарии при компиляции
+    "allowSyntheticDefaultImports": true // Упрощает импорт модулей без default export
+  },
+  "include": ["src/**/*"], // Какие файлы включать в компиляцию
+  "exclude": ["node_modules", "dist", "**/*.test.ts"] // Какие файлы исключить
+}

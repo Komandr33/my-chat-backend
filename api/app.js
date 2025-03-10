@@ -6,5 +6,7 @@ app.get('/', (req, res) => {
   res.send('<h1>Hello world</h1>');
 });
 
-// Экспортируем приложение как Serverless Function
-module.exports = app;
+// Экспортируем функцию для Serverless Function
+module.exports = (req, res) => {
+  app(req, res);
+};

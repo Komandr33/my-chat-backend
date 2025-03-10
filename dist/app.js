@@ -7,7 +7,7 @@ const express_1 = __importDefault(require("express"));
 const node_http_1 = require("node:http");
 const app = (0, express_1.default)();
 const server = (0, node_http_1.createServer)(app);
-app.get('https://my-chat-backend-five.vercel.app/', (req, res) => {
+app.get('/', (req, res) => {
     res.send('<h1>Hello world</h1>');
 });
 server.listen(3009, () => {

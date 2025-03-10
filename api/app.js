@@ -1,4 +1,5 @@
-import express from 'express';
+// api/app.js
+const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
@@ -6,5 +7,4 @@ app.get('/', (req, res) => {
 });
 
 // Экспортируем приложение как Serverless Function
-
-export default app;
+module.exports = app;

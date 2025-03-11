@@ -8,6 +8,6 @@ app.get('/', (req: any, res: any) => {
   res.send('<h1>Hello world</h1>');
 });
 
-server.listen(3009, () => {
+server.listen(3000, () => {
   console.log('server running at http://localhost:3009');
 });
